@@ -29,7 +29,7 @@ The first implementation was a proof of concept to shorten the longest words
 first. This would eventually be combined with [#2] to remove any additional
 characters.
 
-[naive.rb](./lib/naive.rb) | [naive_spec.rb](./spec/naive_spec.rb)
+[naive.rb](./ruby/lib/naive.rb) | [naive_spec.rb](./ruby/spec/naive_spec.rb)
 
 ```
 | smal diag cros |
@@ -40,7 +40,7 @@ characters.
 The second approach utilizes a map of known abbreviations. This example has
 a few more test cases to find the best replacements to match the desired length.
 
-[with_dictionary.rb](./lib/with_dictionary.rb) | [with_dictionary_spec.rb](./spec/with_dictionary_spec.rb)
+[with_dictionary.rb](./ruby/lib/with_dictionary.rb) | [with_dictionary_spec.rb](./ruby/spec/with_dictionary_spec.rb)
 
 ```
 // 14 chars
