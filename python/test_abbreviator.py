@@ -48,6 +48,6 @@ class TestAbbreviator:
     @pytest.mark.parametrize("target_length", [
         0, -1
     ])
-    def test_new_instance_raises_value_error_given_negative_target(self, target_length):
+    def test_new_instance_raises_value_error_given_non_positive_target(self, target_length):
         with pytest.raises(ValueError, match='target_length must be greater than 0.'):
             Abbreviator(target_length=-1)
