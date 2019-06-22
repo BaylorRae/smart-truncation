@@ -65,7 +65,7 @@ a few more test cases to find the best replacements to match the desired length.
 Naive approach that prioritzes longest-token truncation. Abbreviator limits
 minimum token word length to 1.
 
-[abbreviator.py](./python/abbreviator.py) | [abbreviator_tests.py](./python/abbreviator_tests.py)
+[abbreviator.py](./python/abbreviator.py) | [test_abbreviator.py](./python/test_abbreviator.py)
 
 To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
 directory.
