@@ -70,10 +70,5 @@ minimum token word length to 1.
 To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
 directory.
 
-## Thanks
-
-Huge thanks to [@wesdoyle] for looking at this problem and offering solutions.
-
 [#1]: #1-naive-implementation
 [#2]: #2-dictionary-implementation
-[@wesdoyle]: https://github.com/wesdoyle
