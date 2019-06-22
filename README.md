@@ -1,7 +1,11 @@
 # Smart Truncation
 
-- [Naive Implementation][#1]
-- [Dictionary Implementation][#2]
+- Ruby
+  - [Naive Implementation][#1]
+  - [Dictionary Implementation][#2]
+  
+- Python 3
+  - [Naive Implementation][#3]
 
 Let’s say you have a container with a fixed width and need to truncate text.
 
