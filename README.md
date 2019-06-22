@@ -23,7 +23,9 @@ But a human would abbreviate the words.
 
 ## Implementations
 
-### 1. Naive Implementation
+### Ruby
+
+#### 1. Naive Implementation
 
 The first implementation was a proof of concept to shorten the longest words
 first. This would eventually be combined with [#2] to remove any additional
@@ -35,7 +37,7 @@ characters.
 | smal diag cros |
 ```
 
-### 2. Dictionary Implementation
+#### 2. Dictionary Implementation
 
 The second approach utilizes a map of known abbreviations. This example has
 a few more test cases to find the best replacements to match the desired length.
@@ -55,6 +57,18 @@ a few more test cases to find the best replacements to match the desired length.
   1..............17
 | sm diagonal cross |
 ```
+
+### Python 3
+
+#### 1. Naive Implementation
+
+Naive approach that prioritzes longest-token truncation. Abbreviator limits
+minimum token word length to 1.
+
+[abbreviator.py](./python/abbreviator.py) | [abbreviator_tests.py](./python/abbreviator_tests.py)
+
+To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
+directory.
 
 ## Thanks
 
