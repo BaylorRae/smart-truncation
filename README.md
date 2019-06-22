@@ -60,7 +60,7 @@ a few more test cases to find the best replacements to match the desired length.
 
 ### Python 3
 
-#### 1. Naive Implementation
+#### 1. Python Naive Implementation
 
 Naive approach that prioritzes longest-token truncation. Abbreviator limits
 minimum token word length to 1.
@@ -72,3 +72,4 @@ directory.
 
 [#1]: #1-naive-implementation
 [#2]: #2-dictionary-implementation
+[#3]: #1-python-naive-implementation
