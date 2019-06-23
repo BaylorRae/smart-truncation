@@ -1,7 +1,11 @@
 # Smart Truncation
 
-- [Naive Implementation][#1]
-- [Dictionary Implementation][#2]
+- Ruby
+  - [Naive Implementation][#1]
+  - [Dictionary Implementation][#2]
+  
+- Python 3
+  - [Naive Implementation][#3]
 
 Let’s say you have a container with a fixed width and need to truncate text.
 
@@ -23,7 +27,9 @@ But a human would abbreviate the words.
 
 ## Implementations
 
-### 1. Naive Implementation
+### Ruby
+
+#### 1. Naive Implementation
 
 The first implementation was a proof of concept to shorten the longest words
 first. This would eventually be combined with [#2] to remove any additional
@@ -35,7 +41,7 @@ characters.
 | smal diag cros |
 ```
 
-### 2. Dictionary Implementation
+#### 2. Dictionary Implementation
 
 The second approach utilizes a map of known abbreviations. This example has
 a few more test cases to find the best replacements to match the desired length.
@@ -56,10 +62,18 @@ a few more test cases to find the best replacements to match the desired length.
 | sm diagonal cross |
 ```
 
-## Thanks
+### Python 3
 
-Huge thanks to [@wesdoyle] for looking at this problem and offering solutions.
+#### 1. Python Naive Implementation
+
+Naive approach that prioritzes longest-token truncation. Abbreviator limits
+minimum token word length to 1.
+
+[abbreviator.py](./python/abbreviator.py) | [test_abbreviator.py](./python/test_abbreviator.py)
+
+To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
+directory.
 
 [#1]: #1-naive-implementation
 [#2]: #2-dictionary-implementation
-[@wesdoyle]: https://github.com/wesdoyle
+[#3]: #1-python-naive-implementation
