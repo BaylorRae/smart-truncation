@@ -1,11 +1,14 @@
 # Smart Truncation
 
+- CSharp
+  - [Dictionary Implementation][#csharp-1]
+
+- Python 3
+  - [Naive Implementation][#3]
+
 - Ruby
   - [Naive Implementation][#1]
   - [Dictionary Implementation][#2]
-  
-- Python 3
-  - [Naive Implementation][#3]
 
 Let’s say you have a container with a fixed width and need to truncate text.
 
@@ -26,6 +29,29 @@ But a human would abbreviate the words.
 ```
 
 ## Implementations
+
+### CSharp
+
+#### 1. CSharp Dictionary Implementation
+
+A simple abbreviator that finds the closest length by replacing words with their
+known abbreviations.
+
+[Abbreviator.cs](./csharp/Abbreviator.cs) | [AbbreviatorTest.cs](./csharp/AbbreviatorTest.cs)
+
+To run tests. `dotnet test` in the [`./csharp` directory](./csharp)
+
+### Python 3
+
+#### 1. Python Naive Implementation
+
+Naive approach that prioritzes longest-token truncation. Abbreviator limits
+minimum token word length to 1.
+
+[abbreviator.py](./python/abbreviator.py) | [test_abbreviator.py](./python/test_abbreviator.py)
+
+To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
+directory.
 
 ### Ruby
 
@@ -62,18 +88,7 @@ a few more test cases to find the best replacements to match the desired length.
 | sm diagonal cross |
 ```
 
-### Python 3
-
-#### 1. Python Naive Implementation
-
-Naive approach that prioritzes longest-token truncation. Abbreviator limits
-minimum token word length to 1.
-
-[abbreviator.py](./python/abbreviator.py) | [test_abbreviator.py](./python/test_abbreviator.py)
-
-To run tests, `pip install pytest` and execute `pytest` in the [Python](./python/)
-directory.
-
 [#1]: #1-naive-implementation
 [#2]: #2-dictionary-implementation
 [#3]: #1-python-naive-implementation
+[#csharp-1]: #1-csharp-dictionary-implementation
